@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #05F2DB;
+    z-index: 1000;
+}
+
+#todos-produtos {
+    background:  #252625;
+    display: block;
+    height: 1276px;
+}
+
+.titulo--btn {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#btn-add-produto {
+    margin-top: 5em;
+}
+
+.titulo--btn h2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 6em;
+    margin-left: -1.5em;
+    text-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
+}
+
+#btn-add-produto {
+    width: 130px;
+    height:45px;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    margin-top: 10em;
+    margin-right: -2em;
+}
+
+#btn-add-produto a {
+    color: #FFFFFF;
+}
+
+.bloco-1 {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.bloco-1 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.bloco-1 li {
+    display: inline-block;
+    width: 180px;
+    height: 260px;
+    border-radius: 5%;
+    box-shadow:  -2px -2px 0 #05F2DB,
+    -2px 2px 0 #FFF,
+    2px -2px 0 #05F2DB,
+    2px 0 0 #FFF;
+    background: #FFFFFF;
+}
+
+.bloco-2 {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.bloco-2 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.bloco-2 li {
+    display: inline-block;
+    width: 180px;
+    height: 260px;
+    border-radius: 5%;
+    box-shadow:  -2px -2px 0 #05F2DB,
+    -2px 2px 0 #FFF,
+    2px -2px 0 #05F2DB,
+    2px 0 0 #FFF;
+    background: #FFFFFF;
+}
+
+.bloco-3 {
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.bloco-3 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.bloco-3 li {
+    display: inline-block;
+    width: 180px;
+    height: 260px;
+    border-radius: 5%;
+    box-shadow:  -2px -2px 0 #05F2DB,
+    -2px 2px 0 #FFF,
+    2px -2px 0 #05F2DB,
+    2px 0 0 #FFF;
+    background: #FFFFFF;
+    margin-bottom: 5em;
+}
+
+.bloco-1 li img, .bloco-2 li img,
+.bloco-3 li img {
+    width: 180px;
+    height: 164px;
+    border-radius: 5% 5% 0 0;
+    margin-bottom: .5em;
+}
+
+#todos-produtos ul li:hover {
+    transform: scale(1.1, 1.1);
+}

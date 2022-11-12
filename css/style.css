@@ -1,0 +1,809 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2A7AE4;
+}
+
+/* Estilização Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    height: 90px;
+    padding: 20px 140px;
+    align-items: center;
+    justify-content: space-between;
+    background: #edefed;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+
+header img {
+    margin-right: 30px;
+}
+
+input[type="search"] {
+    width: 470px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 50px 0 0 50px;
+    margin: 0 0 1.5em 3em;
+    box-shadow:  -2px -2px 0 #058bf2,
+    -2px 2px 0 #058bf2,
+    0 0 0 #058bf2,
+    0 0 0 #058bf2;
+    color: #058bf2;
+}
+
+header label {
+    display: flex;
+}
+
+.lupa {
+    padding: 7px;
+    height: 32px;
+    width: 50px;
+    margin-left: -.5em;
+    background: transparent;
+    border-radius: 0 50px 50px 0;
+    box-shadow:  0 0 0 #058bf2,
+    0 2px 0 #058bf2,
+    2px -2px 0 #058bf2,
+    2px 0 0 #058bf2;
+}
+
+.lupa-mobile {
+    display: none;
+}
+
+.btn-login {
+    width: 182px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #2A7AE4;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow:  -1px -1px 0 #058bf2,
+    -1px 1px 0 #058bf2,
+    1px -1px 0 #058bf2,
+    1px 1px 0 #058bf2;
+    margin-top: .2em;
+}
+
+.btn-login a:visited {
+    color: #2A7AE4;
+}
+
+.btn-login:hover {
+    background: rgba(5, 242, 219, .2);
+    color: #ffffff;
+}
+
+/* Estilização seção propaganda Banner */
+
+#propaganda {
+    background-image: url("../Imagens/Banners/banner-image-desktop.jpg");
+    height: 352px;
+    position: relative;
+    top: 4em;
+    bottom: 2em;
+}
+
+.propaganda {
+    position: absolute;
+    width: 80%;
+    height: 170px;
+    align-items: center;
+    margin: 10em auto auto 8em;
+}
+
+.propaganda h1 {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.propaganda p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: .4em;
+}
+
+.btn-propaganda {
+    width: 130px;
+    height:45px;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    margin-top: 1.5em;
+    border: none;
+    outline: none;
+}
+
+/* Estilização seção dos produtos */
+
+#produtos {
+    background: #ebeceb;
+    display: block;
+    height: 1226px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5em 0 0 0;
+}
+
+#produtos h2 {
+    display: inline-flex;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+    text-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
+    margin: 1.5em 0 0 0;
+}
+
+.star-wars, .consoles, .diversos {
+    position: relative;
+    width: 85%;
+    display: block;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.link-vertd {
+    display: inline-flex;
+    float: right;
+    margin-top: 3.5em;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-vertd:after {
+    content: url("../Imagens/Imagens-Icones/seta-vertd.svg");
+    margin-left: 10px;
+}
+
+.link-vertd:visited {
+    color: #2A7AE4;
+}
+
+.star-wars ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-wars li {
+    display: inline-block;
+}
+
+.consoles h2, .link-vertd {
+    display: inline-block;
+}
+
+.consoles ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consoles li {
+    display: inline-block;
+}
+
+
+.diversos h2, .link-vertd {
+    display: inline-block;
+}
+
+.diversos ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diversos li {
+    display: inline-block;
+}
+
+li, h4, p {
+    margin-top: .5em;
+}
+
+li h4 {
+    margin-bottom: .5em;
+    margin-left: .3em;
+}
+
+li p {
+    font-size: .9rem;
+    font-weight: 590;
+    margin-left: .3em;
+}
+
+.star-wars li, .consoles li,
+.diversos li {
+    width: 180px;
+    height: 260px;
+    border-radius: 5%;
+    background: #FFFFFF;
+    justify-content: space-between;
+}
+
+.star-wars li a, .consoles li a, .diversos li a {
+    font-weight: bold;
+    margin-left: .3em;
+}
+
+.star-wars li img, .consoles li img,
+.diversos li img {
+    width: 180px;
+    height: 164px;
+    border-radius: 5% 5% 0 0;
+    margin-bottom: .5em;
+}
+
+#produtos ul li:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+/* Estilização da seção do Footer Contato */
+
+#contato {
+    background: #bdd6ef;
+    height: 368px;
+    justify-content: center;
+}
+
+.div-contato {
+    width: 80%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+form p {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logo-contato {
+    width: 176px;
+    height: 51px;
+}
+
+.nav-contato ul {
+    margin-top: .05em;
+    width: 220px;
+}
+
+.nav-contato li {
+    margin-bottom: 2em;
+}
+
+.nav-contato a {
+    font-size: 1rem;
+    color: black;
+}
+
+.nav-contato a:hover {
+    color: blue;
+}
+
+form, .nav-contato, .logo-contato {
+    margin-top: 2em;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: -1.3rem;
+    margin-left: 0.5rem;
+}
+
+input[type="text"] {
+    display: block;
+    width: 560px;
+    height: 56px;
+    margin: 0 0 3em 0;
+    border: none;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+}
+
+textarea {
+    width: 560px;
+    margin: 0 0 1em 0;
+    border: none;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+}
+
+#botao {
+    height: 51px;
+    width: 165px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    margin-left: -.5em;
+    background: #2A7AE4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilização do Rodapé */
+
+Footer {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    background: linear-gradient(to bottom, #ffffff);
+}
+
+footer p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1250px){
+
+    .star-wars ul, .consoles ul, .diversos ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .star-wars li img, .consoles li img,
+    .diversos li img {
+        width: 166px;
+        height: 164px;
+    }
+    
+    #produtos ul .produto-6 {
+        border: 1px solid black;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #propaganda {
+        background-image: url("../Imagens/Banners/banner-image-tablet-1040px.jpg");
+        background-repeat: no-repeat;
+        height: 352px;
+        position: relative;
+    }
+
+    #produtos {
+        height: 1080px;
+    }
+
+    #produtos ul .produto-5 {
+        border: 1px solid black;
+        display: none;
+    }
+
+    .star-wars, .consoles, .diversos {
+        width: 92%;
+    }
+
+    .star-wars li img, .consoles li img,
+    .diversos li img {
+        width: 164px;
+        height: 174px;
+    }
+
+    #produtos h2 {
+        font-size: 22px;
+        margin-bottom: -1.5em;
+    }
+
+    .link-vertd {
+        float: right;
+        margin-top: 4em;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        display: flex;
+        height: 90px;
+        padding: 5px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+        width: 60%;
+    }
+
+    header img {
+        margin-right: .5em;
+        width: 150px;
+        height: 38px;
+    }
+
+    input[type="search"] {
+        width: 242px;
+        height: 38px;
+        background: #F5F5F5;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        border-radius: 50px 0 0 50px;
+        margin-bottom: 1.5em;
+    }
+
+    header label {
+        display: flex;
+    }
+
+    .lupa {
+        padding: 8px;
+        height: 38px;
+        width: 45px;
+        background: #F5F5F5;
+        border-radius: 0 50px 50px 0;
+    }
+
+    .btn-login {
+        width: 182px;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #2A7AE4;
+        color: #2A7AE4;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    #propaganda {
+        background-image: url("../Imagens/Banners/banner-image-tablet-768px.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 352px;
+        position: relative;
+    }
+
+    .propaganda {
+        position: absolute;
+        width: 90%;
+        height: 170px;
+        align-items: center;
+        margin: 10em auto auto 2em;
+    }
+
+    #contato {
+        background: #EAF2FD;
+        height: 368px;
+        justify-content: center;
+    }
+
+    .div-contato {
+        width: 92%;
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        position: relative;
+    }
+
+
+    .logo-contato {
+        width: 176px;
+        height: 51px;
+    }
+
+    .nav-contato ul {
+        position: absolute;
+        margin-left: -13.5em;
+        margin-top: 3.5em;
+        width: 220px;
+    }
+
+    .nav-contato li {
+        margin-bottom: 2em;
+    }
+
+    label {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: -1.3rem;
+        margin-left: 0.5rem;
+    }
+
+    input[type="text"] {
+        display: block;
+        width: 434px;
+        height: 56px;
+        margin: 0 0 3em 0;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+    textarea {
+        width: 434px;
+        margin: 0 0 1em 0;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    header {
+        position: relative;
+        display: flex;
+        height: 80px;
+        padding: 5px 20px;
+    }
+
+    header div {
+        display: flex;
+        width: 30%;
+    }
+
+    header img {
+        margin-left: -.9em;
+        width: 120px;
+        height: 33px;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+
+    header label {
+        display: flex;
+    }
+
+    .lupa {
+        padding: 8px;
+        height: 38px;
+        width: 45px;
+        background: transparent;
+        color: black;
+        display: none;
+    }
+
+    .btn-login {
+        width: 133px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #2A7AE4;
+        color: #2A7AE4;
+        font-size: .8rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 2em;
+    }
+
+    .lupa-mobile {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin-right: .2em;
+    }
+
+    #propaganda {
+        background-image: url("../Imagens/Banners/banner-image-mobile-414px.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 192px;
+        position: relative;
+    }
+
+    .propaganda {
+        position: absolute;
+        width: 90%;
+        height: 98px;
+        align-items: center;
+        margin: 4em auto auto .9em;
+    }
+
+    .propaganda h1 {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 61px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .propaganda p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: left;
+        color: #FFFFFF;
+        margin-top: -1em;
+    }
+
+    .btn-propaganda {
+        width: 119px;
+        height:40px;
+        background: #2A7AE4;
+        color: #FFFFFF;
+        margin-top: .3em;
+        border: none;
+        outline: none;
+    }
+
+    #produtos {
+        height: 1783px;
+    }
+
+    #produtos h2 {
+        font-size: 22px;
+        margin-bottom: .2em;
+        margin-top: 1em;
+    }
+
+    #produtos ul .produto-5, .produto-6 {
+        display: none;
+    }
+
+
+    .star-wars, .consoles, .diversos {
+        width: 92%;
+        margin: auto;
+    }
+
+    .star-wars li img, .consoles li img,
+    .diversos li img {
+        width: 156px;
+        height: 165px;
+    }
+
+    .star-wars li, .consoles li,
+    .diversos li {
+        margin-bottom: 1em;
+    }
+
+    li p, a, h4 {
+        font-size: .8rem;
+    }
+
+
+    .link-vertd {
+        float: right;
+        margin-top: 3em;
+        font-size: .8rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .link-vertd:after {
+        content: url("../Imagens/Imagens-Icones/seta-vertd-mobile.svg");
+        margin-left: .3em;
+    }
+
+
+    #contato {
+        background: #EAF2FD;
+        height: 620px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-contato {
+        width: 92%;
+        height: 100%;
+        margin: auto;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #logo-contato {
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+
+    .nav-contato ul {
+        position: relative;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-contato li {
+        position: relative;
+        margin-bottom: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-contato a {
+        position: relative;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    label {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: -1.3rem;
+        margin-left: 0.5rem;
+    }
+
+    input[type="text"] {
+        display: block;
+        width: 100%;
+        height: 56px;
+        margin: auto auto 3em auto;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+    textarea {
+        width: 100%;
+        margin: auto auto .5em auto;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+}
